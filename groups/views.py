@@ -4,9 +4,6 @@ from teachers.models import Teacher
 from students.models import Student
 
 
-def home(request):
-    return render(request, 'index.html')
-
 def groups_list(request):
     groups = Group.objects.all()
     group_count = groups.count()
